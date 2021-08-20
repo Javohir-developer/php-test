@@ -14,7 +14,12 @@ class server{
                 new Poch();
                 break;
             default:
-                echo "Ошибка: такой команды не существует". PHP_EOL;
+                $error = "Ошибка: такой команды не существует". PHP_EOL;
+                echo $error;
+                $filename = "error.txt";
+                $fh = fopen($filename, "w");
+                fwrite($fh, $error);
+                fclose($fh);
         }
     }
 
