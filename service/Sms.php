@@ -1,7 +1,9 @@
 <?php
 
 namespace service;
-class Sms
+require('service/Shop.php');
+use service\Shop;
+class Sms extends Shop
 {
     public function __construct(){
 //        Отправить смс

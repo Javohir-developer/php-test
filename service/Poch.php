@@ -1,7 +1,7 @@
 <?php
 
 namespace service;
-class Poch
+class Poch extends Shop
 {
     public function __construct(){
 //        отправить сообщение на почту
